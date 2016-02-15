@@ -6,6 +6,23 @@ and converted to tsv.
 the directory ~/Downloads/tennis_atp-master/ contains detailed tennis
 results and queries
 
+## PROGRAMS
+
+`slam.sh` is a simple guery program. 
+Enter various key words and it will report rows that match those keys.
+
+./slam.sh 2001 FO 
+./slam.sh 2012
+./slam.sh Nadal
+./slam.sh USO 199
+
+# As a simple hack, if the first arg is wta then the wtaslams.tsv is searched.
+
+./slam wta Serena
+
+`command.sh` is a program with various commands for download, extract, and conversion of the wikipedia
+page to the tsv. this should not be required any longer.
+
 ## NOTES
 
 all.csv has data sorted by year and event_num
@@ -27,3 +44,7 @@ this data also has too many other things like symbols stars etc.
 maybe we can just concat this file sorted by year and event_num which i
 need to insert at end. then i can query. but then i can just generate
 this from the atp database
+
+
+## Others
+This is on github under https://github.com/mare-imbrium/tennis-slams
